@@ -17,8 +17,10 @@ export default function AboutUs() {
     <Row>
       <div className='HomeDiv text-center'>
       OUR PHILOSPHY
+      <div>
+     <img className='heroimgs' src={PhiloPic}/>
+     </div>
       </div>
-        <img  src={PhiloPic}/>
         </Row>
         <br/>
         <div className='AboutUsFont'>

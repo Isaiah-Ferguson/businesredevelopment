@@ -24,7 +24,7 @@ export default function NavBar() {
           <Nav.Link  className='navbarLinks navbarText' as={Link} to="/">Home</Nav.Link>
           <Nav.Link className='navbarText navbarLinks' as={Link} to="/AboutUs">About Us</Nav.Link>
           <Nav.Link className='navbarText navbarLinks' as={Link} to="/ClassPage">Classes</Nav.Link>
-          <Nav.Link className='navbarText navbarLinks' as={Link} to="/ContactUsPage">ContactUs</Nav.Link>
+          <Nav.Link className='navbarText navbarLinks' as={Link} to="/ContactUsPage">Contact Us</Nav.Link>
           </Form>
         </Navbar.Collapse>
       </Container>

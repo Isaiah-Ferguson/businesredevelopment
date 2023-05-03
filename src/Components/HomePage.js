@@ -8,7 +8,7 @@ export default function HomePage() {
 
     const BJJPicture = require('../assets/WinstonX.jpg')
   return (
-    <div className='backGround'>
+    <div className='backGround container-fluid'>
         <NavBar/>
       <UncontrolledExample/>
       <br></br>

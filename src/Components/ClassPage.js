@@ -1,5 +1,4 @@
 import React from 'react'
-import UncontrolledExample from './CarouselComponent.js';
 import NavBar from './NavBar.js';
 import { Col, Container,Row } from 'react-bootstrap';
 import Footer from './Footer.js';
@@ -13,7 +12,7 @@ export default function ClassPage() {
   const GroupBJJ = require('../assets/GroupPicture2.jpg')
   
   return (
-    <div className='backGround'>
+    <div className='backGround container-fluid'>
       <NavBar/>
       <Container>
         <Row className='HomeDiv text-center'>
@@ -22,19 +21,19 @@ export default function ClassPage() {
           </div>
         </Row>
         <Row>
-        <Col lg={4} md={4} xs={4} className="hero-container">
+        <Col lg={4} md={4} xs={12} className="hero-container">
       <img src={MTPic} alt="hero" className="hero-image" />
       <div className="hero-text">
         <h1>Muay Thai</h1>
       </div>
     </Col>
-    <Col lg={4} md={4} xs={4} className="hero-container">
+    <Col lg={4} md={4} xs={12} className="hero-container">
       <img src={BJJPic} alt="hero" className="hero-image" />
       <div className="hero-text">
         <h1>Brazilian Jiu Jitsu</h1>
       </div>
     </Col>
-    <Col lg={4} md={4} xs={4} className="hero-container">
+    <Col lg={4} md={4} xs={12} className="hero-container">
       <img src={TKDPic} alt="hero" className="hero-image" />
       <div className="hero-text">
         <h1>Taekwondo</h1>
@@ -47,7 +46,7 @@ export default function ClassPage() {
           </div>
           <img src={GroupMt}/>
         </Row>
-        <br/>
+    
         <Row className='classDiv'>
 
         <div className='text-center classHeader'>
@@ -61,13 +60,14 @@ export default function ClassPage() {
           <p className='Ptag'>7:15pm - 8:15pm</p>
         </div>
         </Row>
+        <br/>
         <Row className='HomeDiv text-center'>
           <div>
           Brazilian Jiu-Jitsu
           </div>
           <img src={GroupBJJ}/>
         </Row>
-        <br/>
+       
         <Row className='classDiv'>
         <div className='text-center classHeader'>
         Current Brazilian Jiu-Jitsu Program
@@ -80,13 +80,13 @@ export default function ClassPage() {
           <p className='Ptag'>6:00pm - 7:15pm</p>
         </div>
         </Row>
+        <br/>
         <Row className='HomeDiv text-center'>
           <div>
           Taekwondo
           </div>
           <img src={TKDGroup}/>
         </Row>
-        <br/>
         <Row className='classDiv'>
         <div className='text-center classHeader'>
         Current Taekwondo Program
@@ -103,7 +103,9 @@ export default function ClassPage() {
           <ul className='Ptag'l>(Kids - All) 9:30am - 10:15am</ul>
           <ul className='Ptag'>(Adults: 12 & up) 10:30am - 11:30am</ul>
           </div>
+          
         </Row>
+        <br/>
       </Container>
       <Footer/>
     </div>
