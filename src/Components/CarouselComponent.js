@@ -13,27 +13,27 @@ function UncontrolledExample() {
     <Carousel>
     
       <Carousel.Item>
-        <img className="d-block w-100 caraselIMG" src={ImageOne} alt="First slide" />
+        <img className="d-block w-100 caraselIMG" style={{width: '100%', maxHeight: '100vh', backgroundPosition: 'center', objectFit: 'cover'}} src={ImageOne} alt="First slide" />
         <Carousel.Caption>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img className="d-block w-100 caraselIMG" src={ImageTwo} alt="First slide" />
+        <img className="d-block w-100 caraselIMG" style={{width: '100%', maxHeight: '100vh', backgroundPosition: 'center', objectFit: 'cover'}} src={ImageTwo} alt="First slide" />
         <Carousel.Caption>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img className="d-block w-100 caraselIMG" src={ImageThree} alt="First slide" />
+        <img className="d-block w-100 caraselIMG" style={{width: '100%', maxHeight: '100vh', backgroundPosition: 'center', objectFit: 'cover'}} src={ImageThree} alt="First slide" />
         <Carousel.Caption>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img className="d-block w-100 caraselIMG" src={ImageFour} alt="First slide" />
+        <img className="d-block w-100 caraselIMG" style={{width: '100%', maxHeight: '100vh', backgroundPosition: 'center', objectFit: 'cover'}} src={ImageFour} alt="First slide" />
         <Carousel.Caption>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img className="d-block w-100 caraselIMG" src={ImageFive} alt="First slide" />
+        <img className="d-block w-100 caraselIMG" style={{width: '100%', maxHeight: '100vh', backgroundPosition: 'center', objectFit: 'cover'}} src={ImageFive} alt="First slide" />
         <Carousel.Caption>
         </Carousel.Caption>
       </Carousel.Item>

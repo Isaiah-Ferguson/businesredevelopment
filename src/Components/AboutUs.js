@@ -14,14 +14,12 @@ export default function AboutUs() {
     <NavBar/>
     <br/>
     <Container>
-    <Row>
       <div className='HomeDiv text-center'>
-      OUR PHILOSPHY
+      OUR PHILOSOPHY
       <div>
      <img className='heroimgs' src={PhiloPic}/>
      </div>
       </div>
-        </Row>
         <br/>
         <div className='AboutUsFont'>
           <p>At CAMA we take a personalized approach to help you with all your exercise, fitness, and health needs.</p>
@@ -37,20 +35,20 @@ export default function AboutUs() {
           </Row>
           <Row>
             <Col lg={3} md={6} sm={6} className="hero-container">
-              <img src={Sensei} alt="hero" className="hero-image" />
-      <div className="hero-text"> <h1>Head instructor Louse Concepcion</h1> </div>
+              <img src={Sensei} alt="hero" className="hero-image2" />
+      <div className="hero-text"> <p>Louie Concepcion</p> </div>
       </Col>
             <Col lg={3} md={6} sm={6} className="hero-container">
-              <img src={Isaiah} alt="hero" className="hero-image" />
-      <div className="hero-text"> <h1>Coach Isaiah Ferguson</h1> </div>
+              <img src={Isaiah} alt="hero" className="hero-image2" />
+      <div className="hero-text"> <p>Isaiah Ferguson</p> </div>
       </Col>
             <Col lg={3} md={6} sm={6} className="hero-container">
               <img src={Angelo} alt="hero" className="hero-image" />
-      <div className="hero-text"> <h1>Coach Angelo Garcia</h1> </div>
+      <div className="hero-text"> <p>Angelo Garcia</p> </div>
       </Col>
             <Col lg={3} md={6} sm={6} className="hero-container">
               <img src={Tina} alt="hero" className="hero-image" />
-      <div className="hero-text"> <h1>Coach Tina</h1> </div>
+      <div className="hero-text"> <p>Tina Tagorda</p> </div>
       </Col>
           
         </Row>

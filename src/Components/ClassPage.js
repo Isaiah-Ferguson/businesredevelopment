@@ -2,6 +2,7 @@ import React from 'react'
 import NavBar from './NavBar.js';
 import { Col, Container,Row } from 'react-bootstrap';
 import Footer from './Footer.js';
+import { useRef } from 'react';
 
 export default function ClassPage() {
   const MTPic = require('../assets/ChristionKnee.jpg');
@@ -10,7 +11,15 @@ export default function ClassPage() {
   const GroupMt = require('../assets/mt.jpg')
   const TKDGroup = require('../assets/TKDtina.jpeg');
   const GroupBJJ = require('../assets/GroupPicture2.jpg')
-  
+
+  const Mt = useRef(null);
+  const Bjj = useRef(null);
+  const TKD = useRef(null);
+
+  function scrollToTarget(ref) {
+    ref.current.scrollIntoView({ behavior: 'smooth' });
+  }
+
   return (
     <div className='backGround container-fluid'>
       <NavBar/>
@@ -22,32 +31,32 @@ export default function ClassPage() {
         </Row>
         <Row>
         <Col lg={4} md={4} xs={12} className="hero-container">
-      <img src={MTPic} alt="hero" className="hero-image" />
+      <img src={MTPic} alt="hero" className="hero-image" onClick={() => scrollToTarget(Mt)} style={{cursor: 'pointer'}}/>
       <div className="hero-text">
         <h1>Muay Thai</h1>
       </div>
     </Col>
     <Col lg={4} md={4} xs={12} className="hero-container">
-      <img src={BJJPic} alt="hero" className="hero-image" />
+      <img src={BJJPic} alt="hero" className="hero-image"  onClick={() => scrollToTarget(Bjj)} style={{cursor: 'pointer'}}/>
       <div className="hero-text">
         <h1>Brazilian Jiu Jitsu</h1>
       </div>
     </Col>
     <Col lg={4} md={4} xs={12} className="hero-container">
-      <img src={TKDPic} alt="hero" className="hero-image" />
+      <img src={TKDPic} alt="hero" className="hero-image" onClick={() => scrollToTarget(TKD)} style={{cursor: 'pointer'}}/>
       <div className="hero-text">
         <h1>Taekwondo</h1>
       </div>
     </Col>
     </Row>
-    <Row className='HomeDiv text-center'>
+    <div className='HomeDiv text-center mt-3' ref={Mt} id="Mt">
           <div>
           Muay Thai
           </div>
-          <img src={GroupMt}/>
-        </Row>
+          <img className='heroimgs' src={GroupMt} />
+        </div>
     
-        <Row className='classDiv'>
+        <div className='classDiv'>
 
         <div className='text-center classHeader'>
         Current Muay-Thai Program
@@ -59,16 +68,16 @@ export default function ClassPage() {
           <p className='Ptag'>Mon / Wed / Fri</p>
           <p className='Ptag'>7:15pm - 8:15pm</p>
         </div>
-        </Row>
+        </div>
         <br/>
-        <Row className='HomeDiv text-center'>
+        <div className='HomeDiv text-center'  ref={Bjj} id="Bjj">
           <div>
           Brazilian Jiu-Jitsu
           </div>
-          <img src={GroupBJJ}/>
-        </Row>
+          <img className='heroimgs' src={GroupBJJ}/>
+        </div>
        
-        <Row className='classDiv'>
+        <div className='classDiv'>
         <div className='text-center classHeader'>
         Current Brazilian Jiu-Jitsu Program
         </div>
@@ -79,15 +88,15 @@ export default function ClassPage() {
           <p className='Ptag'>Mon / Wed / Fri</p>
           <p className='Ptag'>6:00pm - 7:15pm</p>
         </div>
-        </Row>
+        </div>
         <br/>
-        <Row className='HomeDiv text-center'>
+        <div className='HomeDiv text-center' ref={TKD} id="TKD">
           <div>
           Taekwondo
           </div>
-          <img src={TKDGroup}/>
-        </Row>
-        <Row className='classDiv'>
+          <img className='heroimgs' src={TKDGroup}/>
+        </div>
+        <div className='classDiv'>
         <div className='text-center classHeader'>
         Current Taekwondo Program
         </div>
@@ -104,7 +113,7 @@ export default function ClassPage() {
           <ul className='Ptag'>(Adults: 12 & up) 10:30am - 11:30am</ul>
           </div>
           
-        </Row>
+        </div>
         <br/>
       </Container>
       <Footer/>

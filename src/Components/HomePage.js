@@ -24,9 +24,9 @@ export default function HomePage() {
         <Col lg={7} md={7} sm={12} className='d-flex justify-content-center'><CarouselSmallComponent/></Col>
         <Col lg={5} md={5} sm={12} className='listText text-center '>
             <Row>
-                <Col className='listTextSpacing' lg={12} xs={6}>Muay-Thai</Col>
-                <Col className='listTextSpacing' lg={12} xs={6}>Brazilian Jiu-Jitsu</Col>
-                <Col className='listTextSpacing' lg={12} xs={12}>Traditional Taekwondo</Col>
+                <Col className='listTextSpacing' lg={12} md={12} xs={6}>Muay-Thai</Col>
+                <Col className='listTextSpacing' lg={12} md={12} xs={6}>Brazilian Jiu-Jitsu</Col>
+                <Col className='listTextSpacing' lg={12} md={12} xs={12}>Traditional Taekwondo</Col>
             </Row>
         </Col>
         </Row>
@@ -46,7 +46,7 @@ export default function HomePage() {
                     <Col className='HomeEmpowerBG text-center' lg={12} md={12} xs={6}>INTEGRITY</Col>
                     <Col className='HomeEmpowerBG text-center' lg={12} md={12} xs={6}>UNITY</Col>
                     <Col className='HomeEmpowerBG text-center' lg={12} md={12} xs={6}>RESPECT</Col>
-                    <Col className='HomeEmpowerBG text-center' lg={12} md={12} xs={6}>DESCIPLINE</Col>
+                    <Col className='HomeEmpowerBG text-center' lg={12} md={12} xs={6}>DISCIPLINE</Col>
                 </Row>
             </Col>
         </Row>

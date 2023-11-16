@@ -10,8 +10,8 @@ export default function CarouselSmallComponent() {
   return (
     <div className='CarouselDiv'>
     <Carousel>
-      <Carousel.Item className=''>
-        <img className="d-block w-60 caraselIMG2 " src={ImageOne} alt="First slide" />
+      <Carousel.Item >
+        <img className="d-block w-60 caraselIMG2 " src={ImageOne} alt="First slide"/>
         <Carousel.Caption >
          
         </Carousel.Caption>
